@@ -15,6 +15,7 @@ try:
 |_|
 
     """)
+    # power of black team
     host = input(Fore.WHITE+"Enter Your target: ")
     # range [1,2]
     range_aval = input("Enter your range (1): ")
@@ -23,6 +24,7 @@ try:
         sock_POBT = socket(AF_INET,SOCK_STREAM)
         con = sock_POBT.connect_ex((host,i))
         print()
+        # mohamad javad nikbakht
         if con == 0:
             servisname = getservbyport(i)
             print(Fore.LIGHTGREEN_EX+"[<=>] port " , i , servisname , " open ")
